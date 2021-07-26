@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Lobster+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Montserrat&family=Open+Sans&family=Poiret+One&display=swap');
+
+body{
+	background: url(https://images.wallpaperscraft.ru/image/arbuzy_pattern_iagoda_138519_2780x2780.jpg);
+}
+
+.menu__body{
+	font-family: 'Comfortaa', cursive;
+	text-align: center;
+	font-size: 40px;
+	margin: 30px 0 30px 0;
+}
+
+.menu__item{
+	margin: 0 0 0 15px;
+	text-decoration-line: none;
+	color: black;
+	transition-duration: 0.3s;
+}
+
+.menu__item:hover{
+	color: white;
+	text-shadow: 0px 0px 10px black;
+}
+
+.menu__item_active{
+	margin: 15px 0 0 15px;
+	color: Yellow;
+	text-decoration-line: none;
+	transition-duration: 0.3s;
+}
+
+.menu__item_active:hover{
+	text-shadow: 0px 0px 10px yellow;
+}
+
+.about__body{
+	border: 0px solid black;
+}
+
+.title{
+	font-family: 'Comfortaa', Bold;
+	font-size: 70px;
+	text-align: center;
+	margin: 50px 0 50px 0;
+}
+
+.about__text{
+	transition: all 0.5s;
+    font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+
+.about__text:hover{
+	transform: translate(10px, -10px);
+	color: DarkGreen;
+}
+
+.about__item{
+	margin-top: 40px;
+	position: absolute;
+	left: 50%;
+	margin-left: -300px;
+
+	align-items: center;
+	width: 600px;
+	display: flex;
+}
+
+.rules__row{
+	display: flex;
+}
+
+.rules__column{
+	padding-left: 10%;
+	flex: 0 0 20%;
+}
+
+.rules__rule{
+	transition: all 0.5s;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	margin: 30px 0 0px 30px;
+	max-width: 500px;
+}
+
+.rules__rule:hover{
+	transform: translate(10px, -10px);
+	color: DarkGreen;
+}
+
+.tovar__row{
+	display: flex;
+	margin-right: 8.333%;
+	margin-top: 100px;
+}
+
+.tovar__column{
+	width: 600px;
+	transition-duration: 0.5s;
+	margin: 0 0 0 8.333%;
+	border: 5px solid black;
+	background: blue;
+}
+
+.watermelon{
+	background: LightGreen;
+}
+
+.dynya{
+	background: Khaki;
+}
+
+.sliva{
+	background: SlateBlue;
+}
+
+.tovar__column:hover{
+	margin: 0 0 0 8.333%;
+	border: 0px;
+	background: white;
+}
+
+.vinograd{
+	background: SpringGreen;
+}
+
+.peach{
+	background: PeachPuff;
+}
+
+.limon{
+	background: LemonChiffon;
+}
+
+.tovar-item__title{
+	font-family: 'Comfortaa', Bold;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.tovar-item__text{
+	margin-top: 30px;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	text-shadow: 0 0 10px black;
+}
+
+.vip{
+	color: yellow;
+	text-shadow: 0 0 10px black;
+}
