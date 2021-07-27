@@ -103,7 +103,6 @@ body{
 	transition-duration: 0.5s;
 	margin: 0 0 0 8.333%;
 	border: 5px solid black;
-	background: blue;
 }
 
 .watermelon{
@@ -148,10 +147,8 @@ body{
 	text-align: center;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 20px;
-	text-shadow: 0 0 10px black;
 }
 
 .vip{
-	color: yellow;
-	text-shadow: 0 0 10px black;
+
 }
