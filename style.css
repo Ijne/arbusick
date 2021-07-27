@@ -73,9 +73,11 @@ body{
 	display: flex;
 }
 
-.rules__column{
-	float: left;
-	padding-left: 10%;
+.tovar__column{
+	width: 600px;
+	transition-duration: 0.5s;
+	margin: 0 0 0 8.333%;
+	border: 5px solid black;
 }
 
 .rules__rule{
