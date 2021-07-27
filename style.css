@@ -86,7 +86,6 @@ body{
 	transition: all 0.5s;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 40px;
-	max-width: 400px;
 }
 
 .rules__rule:hover{
