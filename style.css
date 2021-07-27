@@ -79,7 +79,6 @@ body{
 
 .rules__column{
 	display: inline-block;
-	padding-left: 10%;
 	flex: 0 0 20%;
 }
 
