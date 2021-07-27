@@ -78,8 +78,7 @@ body{
 }
 
 .rules__column{
-	display: inline-block;
-	flex: 0 0 20%;
+
 }
 
 .rules__rule{
