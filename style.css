@@ -73,25 +73,6 @@ body{
 	display: flex;
 }
 
-.rules__column{
-	float: left;
-	padding-left: 9%;
-}
-
-.rules__rule{
-	transition: all 0.5s;
-	font-family: 'Montserrat', sans-serif;
-	font-size: 40px;
-	max-width: 400px;
-	margin: 20px 0 20px 0;
-	text-align: center;
-}
-
-.rules__rule:hover{
-	transform: translate(10px, -10px);
-	color: DarkGreen;
-}
-
 .tovar__row{
 	display: flex;
 	margin-right: 8.333%;
@@ -163,7 +144,7 @@ body{
 }
 
 .loyal{
-	margin-top: 330px;
+	margin-top: 30px;
 }
 
 .loyal__about{
@@ -195,7 +176,7 @@ body{
 	transition: all 0.2s;
 	margin-bottom: 30px;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 40px;
+	font-size: 35px;
 }
 
 .loyal__list_item:hover{
