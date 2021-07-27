@@ -73,19 +73,17 @@ body{
 	display: flex;
 }
 
-.tovar__column{
-	width: 600px;
-	transition-duration: 0.5s;
-	margin: 0 0 0 8.333%;
-	border: 5px solid black;
+.rules__column{
+	float: left;
+	padding-left: 9%;
 }
 
 .rules__rule{
 	transition: all 0.5s;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 40px;
-	margin: 15px 0 15px 0;
 	max-width: 400px;
+	text-align: center;
 }
 
 .rules__rule:hover{
