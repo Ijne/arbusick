@@ -73,14 +73,17 @@ body{
 	display: flex;
 }
 
-.rules__row{
-	display: flex;
+.rules__column{
+	float: left;
+	padding-left: 10%;
 }
 
-.rules__column{
-	display: inline-block;
-	padding-left: 10%;
-	flex: 0 0 20%;
+.rules__rule{
+	transition: all 0.5s;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	margin: 15px 0 15px 0;
+	max-width: 400px;
 }
 
 .rules__rule{
