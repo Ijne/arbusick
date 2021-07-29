@@ -57,10 +57,6 @@ body{
 	margin: 0 0 30px 0;
 }
 
-.about__text:hover{
-	color: DarkGreen;
-}
-
 .about__item{
 	margin-top: 40px;
 	position: absolute;
@@ -153,10 +149,6 @@ body{
 	font-size: 30px;
 }
 
-.loyal__about:hover{
-	color: DarkGreen;
-}
-
 .loyal__subtitle{
 	margin-top: 40px;
 	margin-left: 10px;
@@ -176,10 +168,6 @@ body{
 	font-size: 30px;
 }
 
-.loyal__list_item:hover{
-	color: DarkGreen;
-}
-
 .vak__text{
 	transition: all 0.5s;
     font-family: 'Montserrat', sans-serif;
@@ -188,11 +176,9 @@ body{
 	margin: 0 0 30px 0;
 }
 
-.vak__text:hover{
-	color: DarkGreen;
-}
-
 .vak-item{
+	text-decoration-line: none;
+	color: black;
 	transition: all 0.3s;
 	border: 2px solid black;
 	margin-top: 100px;
