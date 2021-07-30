@@ -6,6 +6,7 @@
 
 body{
 	background: url(https://images.wallpaperscraft.ru/image/arbuzy_pattern_iagoda_138519_2780x2780.jpg);
+    height: 100%;
 }
 
 .menu__body{
@@ -202,4 +203,57 @@ body{
     font-family: 'Montserrat', sans-serif;
 	font-size: 30px;
 	margin: 15px 10px 20px 10px;
+}
+
+.button{
+	margin: 10px 0 0 10px;
+	text-decoration-line: none;
+}
+
+.button__rectangle{
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-right: 10px solid DarkGreen;
+	border-bottom: 10px solid transparent;
+	margin-left: 13px;
+	text-decoration-line: none;
+}
+
+.button__text{
+	display: inline-block;
+	transition: all 0.5s;
+    font-family: 'Montserrat', sans-serif;
+	font-size: 36px;
+	margin: 8px;
+	color: black;
+	text-decoration-line: none;
+
+}
+
+.button:hover{
+	color: darkgreen;
+}
+
+.gruz-about__text{
+	transition: all 0.5s;
+    font-family: 'Montserrat', sans-serif;
+	font-size: 40px;
+	margin: 50px 0 30px 0;
+}
+
+.gruz-about__subtitle{
+	margin-top: 100px;
+	margin-left: 10px;
+	font-family: 'Comfortaa', sans-serif;
+	font-size: 40px;
+}
+
+.text{
+	transition: all 0.5s;
+    font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	text-align: center;
+	margin: 100px 0 30px 0;
 }
