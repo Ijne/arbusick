@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <link rel="stylesheet" href="style.css">
-  <title>Фруктовый магазин "Арбузик"</title>
+  <title>Secret</title>
 </head>
 <body>
   <div class="wrapper">
@@ -39,10 +39,54 @@
           </div>
         </div>
       </div>
+      <div class="loyal">
+        <div class="loyal__body">
+          <div class="loyal__title">Программа лояльности</div>
+            <div class="loyal__text">Представляем вам нашу новую программу лояльности! Приобретая карту и используя её в нашем магазине, вы получаете доступ к уникальным бонусам и привелегиям!</div>
+              <div class="tab">
+                <button class="tab__button" onclick="openPage(event, 'first')">карта</button>
+                <button class="tab__button" onclick="openPage(event, 'second')">бонусы</button>
+                <button class="tab__button" onclick="openPage(event, 'third')">цена</button>
+                <button class="tab__button" onclick="openPage(event, 'four')">кнопка</button>
+              </div>
+              <div id="first" class="tabcontent">
+                <div class="tab__title">Наша карта</div>
+                  <div class="tab__block">
+                    <div class="tab__img1"><img src="1.png" class="tab__img1"></div>
+                    <div class="tab__img2"><img src="2.png" class="tab__img1"></div>
+                    <div class="tab__text">Встречайте нашу карту лояльности с топовым дизайном</div>
+                  </div>
+              </div>
+              <div id="second" class="tabcontent">
+                
+              </div>
+              <div id="third" class="tabcontent">
+                
+              </div>
+              <div id="four" class="tabcontent">
+                
+              </div>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       footer
     </footer>
   </div>
+  <script>
+    function openPage(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
 </body>
 </html>
