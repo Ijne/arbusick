@@ -345,7 +345,7 @@ img{
 }
 
 .footer__body {
-	padding-bottom: 60px;
+	padding-bottom: 30px;
 }
 
 .footer__block {
@@ -388,5 +388,5 @@ img{
 	font-family: 'Ubuntu', sans-serif;
 	font-size: 20px;
 	text-align: center;
-	margin-top: 60px;
+	margin-top: 30px;
 }
