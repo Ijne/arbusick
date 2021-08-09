@@ -268,18 +268,13 @@ img{
 }
 
 @media(min-width: 870px) {
-	.tab__text{
-		font-size: 50px;
-	}
-}
-
-@media(min-width: 870px) {
 	.tab__block{
 	  grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
 	}
 
 	.tab__text{
+		font-size: 50px;
 		grid-column-start: 1;
 		grid-column-end: 3;
 		grid-row-start: 2;
@@ -297,7 +292,7 @@ img{
 
 .bonus__list_item{
 	margin-bottom: 30px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 	font-size: 40px;
 }
 
@@ -307,22 +302,36 @@ img{
 	grid-template-rows: 1fr 1fr;
 }
 
+@media(min-width: 1300px) {
+	.cost__block{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+}
+
 .cost__block_item{
-	display: inline-block;
-	border: 2px solid black;
+	margin-top: 30px;
+}
+
+.cost__title{
+	font-size: 40px;
+	text-align: center;
 }
 
 .cost__text{
-
+	text-align: center;
+	margin-top: 30px;
 }
 
 .cost__shape{
 	display: inline-block;
 	width: 0;
 	height: 0;
-	border-top: 30px solid transparent;
-	border-left: 30px solid black;
-	border-bottom: 30px solid transparent;
+	border-top: 10px solid transparent;
+	border-left: 10px solid black;
+	border-bottom: 10px solid transparent;
+	margin-left: 30px;
 }
 
 
@@ -332,4 +341,52 @@ img{
 	grid-area: footer;
 	padding: 30px;
 	background: black;
+	color: white;
+}
+
+.footer__body {
+	padding-bottom: 60px;
+}
+
+.footer__block {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+}
+
+.footer__img {
+	width: 48px;
+	object-fit: none;
+	transform: translate(30px, 10px);
+}
+
+.footer__item {
+	margin-left: 13.333%;
+}
+
+@media(min-width: 638px) {
+	.footer__img {
+		transform: translate(75px, -30px);
+	}
+}
+
+@media(min-width: 1200px) {
+	.footer__img {
+		width: 48px;
+		object-fit: none;
+		transform: translate(-10px, 25px);
+	}
+
+	.footer__item {
+		margin-left: 33.333%;
+	}
+}
+
+.footer__secondblock {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 30px;
 }
