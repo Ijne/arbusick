@@ -368,7 +368,7 @@ img{
 
 @media(min-width: 638px) {
 	.footer__img {
-		transform: translate(75px, -30px);
+		transform: translate(75px, -10px);
 	}
 }
 
