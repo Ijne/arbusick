@@ -391,8 +391,8 @@ img{
 	margin-top: 70px;
 }
 
-@media(min-width: 700px) {
+@media(min-width: 1200px) {
 	.footer__secondblock {
-		font-size: 20px;
+	    font-size: 20px;
 	}
 }
