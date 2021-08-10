@@ -393,6 +393,6 @@ img{
 
 @media(min-width: 1000px) {
 	.footer__secondblock {
-		font-size: 20px;
+		font-size: 1000px;
 	}
 }
