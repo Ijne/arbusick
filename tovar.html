@@ -1,110 +1,221 @@
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
-  <title>Фруктовый магазин "Арбузик"</title>
+  <link rel="stylesheet" href="style_tovar.css">
+  <title>Secret</title>
 </head>
 <body>
-  <div class="menu">
-    <div class="menu__body">
-      <a href="index.html" class="menu__item">главная</a>
-      <a href="" class="menu__item_active">товар</a>
-      <a href="https://yandex.ru/maps/10658/vladimir-oblast/house/oktyabrskaya_ulitsa_5/YEkYcwJkQEcOQFtvfXp0eHplZw==/?ll=40.555061%2C55.659679&z=20" class="menu__item">на карте</a>
-      <a href="vak.html" class="menu__item">вакансии</a>
-    </div>
-  </div>
-  <div class="tovar">
-    <div class="tovar__body">
-      <div class="tovar__title title">Товар</div>
-        <div class="tovar__row">
-          <div class="tovar__column watermelon">
-            <div class="tovar-item__title">Арбузы</div>
-            <div class="tovar-item__text">
-              <p class='user'>40 руб./кг</p>
-              <p class='user'>Скидка отсутствует</p>
-              <p class='vip'><span class="vipword">VIP</span> 30 руб./кг</p>
-              <p class='vip'><span class="vipword">VIP</span> Скидка по карте лояльности</p>
+  <div class="wrapper">
+    <main class="main">
+      <div class="main__body">
+        <div class="menu">
+          <a href="index.html" class="menu__button back">главная</a>
+          <div class="menu__button" onclick="openPage(event, 'first')">овощи</div>
+          <div class="menu__button" onclick="openPage(event, 'second')">фрукты</div>
+          <div class="menu__button" onclick="openPage(event, 'third')">ягоды</div>
+          <div class="menu__button" onclick="openPage(event, 'four')">скидки</div>
+        </div>
+        <div class="page">
+          <div class="page__body">
+            <div id="first" class="tabcontent">
+              <div class="tab__body">
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <p class="ovoch-item__img"><img src="огурцы.png"></p>
+                      <div class="ovoch-item__title">Огурцы</div>
+                        <div class="ovoch-item__text">100 рублей за киллограм</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__img"><img src="помидоры.png"></div>
+                      <div class="ovoch-item__title">Помидоры</div>
+                        <div class="ovoch-item__text">100 рублей за киллограм</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__img"><img src="редиска.png"></div>
+                      <div class="ovoch-item__title">Редиска</div>
+                        <div class="ovoch-item__text">100 рублей за киллограм</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__img"><img src="капуста.png"></div>
+                      <div class="ovoch-item__title">Капуста</div>
+                        <div class="ovoch-item__text">100 рублей за киллограм</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__img"><img src="баклажаны.png"></div>
+                      <div class="ovoch-item__title">Баклажаны</div>
+                        <div class="ovoch-item__text">100 рублей за киллограм</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__img"><img src="лук.png"></div>
+                      <div class="ovoch-item__title">Лук</div>
+                        <div class="ovoch-item__text">100 рублей за киллограм</div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="tovar__column dynya">
-            <div class="tovar-item__title">Дыни</div>
-            <div class="tovar-item__text">
-              <p class='user'>30 руб./кг</p>
-              <p class='user'>Скидка отсутствует</p>
-              <p class='vip'><span class="vipword">VIP</span> 20 руб./кг</p>
-              <p class='vip'><span class="vipword">VIP</span> Скидка по карте лояльности</p>
+            <div id="second" class="tabcontent">
+              <div class="tab__body">
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Яблоки</div>
+                      <div class="ovoch-item__text">feeeeeeeeesefsefsefsefsefsefesfsefsefsefsefsefsefsef</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Груши</div>
+                      <div class="ovoch-item__text">feeeeeeeeesefsefsefsefsefsefesfsefsefsefsefsefsefsef</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Персики</div>
+                      <div class="ovoch-item__text">feeeeeeeeesefsefsefsefsefsefesfsefsefsefsefsefsefsef</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Нектарины</div>
+                      <div class="ovoch-item__text">feeeeeeeeesefsefsefsefsefsefesfsefsefsefsefsefsefsef</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Манго</div>
+                      <div class="ovoch-item__text">feeeeeeeeesefsefsefsefsefsefesfsefsefsefsefsefsefsef</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Апельсины</div>
+                      <div class="ovoch-item__text">feeeeeeeeesefsefsefsefsefsefesfsefsefsefsefsefsefsef</div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="tovar__column sliva">
-            <div class="tovar-item__title">Сливы</div>
-            <div class="tovar-item__text">
-              <p class='user'>32 руб./кг</p>
-              <p class='user'>Скидка отсутствует</p>
-              <p class='vip'><span class="vipword">VIP</span> 21 руб./кг</p>
-              <p class='vip'><span class="vipword">VIP</span> Скидка по карте лояльности</p>
+            <div id="third" class="tabcontent">
+              <div class="tab__body">
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Вишня</div>
+                      <div class="ovoch-item__text">feeeeeeeeesefsefsefsefsefsefesfsefsefsefsefsefsefsef</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Виноград</div>
+                      <div class="ovoch-item__text">feeeeeeeeesefsefsefsefsefsefesfsefsefsefsefsefsefsef</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Арбузы</div>
+                      <div class="ovoch-item__text">feeeeeeeeesefsefsefsefsefsefesfsefsefsefsefsefsefsef</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Черешня</div>
+                      <div class="ovoch-item__text">feeeeeeeeesefsefsefsefsefsefesfsefsefsefsefsefsefsef</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Малина</div>
+                      <div class="ovoch-item__text">feeeeeeeeesefsefsefsefsefsefesfsefsefsefsefsefsefsef</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Клубника</div>
+                      <div class="ovoch-item__text">feeeeeeeeesefsefsefsefsefsefesfsefsefsefsefsefsefsef</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="four" class="tabcontent">
+              <div class="tab__body">
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Скидок нету</div>
+                      <div class="ovoch-item__text">Скидок сегодня нету</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Скидок нету</div>
+                      <div class="ovoch-item__text">Скидок сегодня нету</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Скидок нету</div>
+                      <div class="ovoch-item__text">Скидок сегодня нету</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Скидок нету</div>
+                      <div class="ovoch-item__text">Скидок сегодня нету</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Скидок нету</div>
+                      <div class="ovoch-item__text">Скидок сегодня нету</div>
+                  </div>
+                </div>
+                <div class="ovoch__block">
+                  <div class="ovoch-item">
+                    <div class="ovoch-item__title">Скидок нету</div>
+                      <div class="ovoch-item__text">Скидок сегодня нету</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="tovar__row">
-          <div class="tovar__column vinograd">
-            <div class="tovar-item__title">Виноград</div>
-            <div class="tovar-item__text">
-              <p class='user'>40 руб./кг</p>
-              <p class='user'>Скидка отсутствует</p>
-              <p class='vip'><span class="vipword">VIP</span> 33 руб./кг</p>
-              <p class='vip'><span class="vipword">VIP</span> Скидка по карте лояльности</p>
-            </div>
-          </div>
-          <div class="tovar__column peach">
-            <div class="tovar-item__title">Персики</div>
-            <div class="tovar-item__text">
-              <p class='user'>50 руб./кг</p>
-              <p class='user'>Скидка отсутствует</p>
-              <p class='vip'><span class="vipword">VIP</span> 32 руб./кг</p>
-              <p class='vip'><span class="vipword">VIP</span> Скидка по карте лояльности</p>
-            </div>
-          </div>
-          <div class="tovar__column limon">
-            <div class="tovar-item__title">Лимоны</div>
-            <div class="tovar-item__text">
-              <p class='user'>50 руб./кг</p>
-              <p class='user'>Скидка отсутствует</p>
-              <p class='vip'><span class="vipword">VIP</span> 32 руб./кг</p>
-              <p class='vip'><span class="vipword">VIP</span> Скидка по карте лояльности</p>
-            </div>
-          </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__body">
+        <div class="footer__block">
+          <div class="footer__item"><img class="footer__img" src="vk.png">@arbu_sick</div>
+          <div class="footer__item"><img class="footer__img" src="facebook.png">@arbu_sick</div>
+          <div class="footer__item"><img class="footer__img" src="instagram.png">@arbu_sick</div>
         </div>
-          <div class='tovar__row'>
-            <div class="tovar__column nectar">
-              <div class="tovar-item__title">Нектарины</div>
-              <div class="tovar-item__text">
-                <p class='user'>55 руб./кг</p>
-                <p class='user'>Скидка отсутствует</p>
-                <p class='vip'><span class="vipword">VIP</span> 33 руб./кг</p>
-                <p class='vip'><span class="vipword">VIP</span> Скидка по карте лояльности</p>
-              </div>
-            </div>
-            <div class="tovar__column mango">
-              <div class="tovar-item__title">Манго</div>
-              <div class="tovar-item__text">
-                <p class='user'>60 руб./кг</p>
-                <p class='user'>Скидка отсутствует</p>
-                <p class='vip'><span class="vipword">VIP</span> 40 руб./кг</p>
-                <p class='vip'><span class="vipword">VIP</span> Скидка по карте лояльности</p>
-              </div>
-            </div>
-            <div class="tovar__column ynjyr">
-              <div class="tovar-item__title">Инжир</div>
-              <div class="tovar-item__text">
-                <p class='user'>70 руб./кг</p>
-                <p class='user'>Скидка отсутствует</p>
-                <p class='vip'><span class="vipword">VIP</span> 45 руб./кг</p>
-                <p class='vip'><span class="vipword">VIP</span> Скидка по карте лояльности</p>
-              </div>
-            </div>
-          </div>
-        
+      </div>
+      <div class="footer__secondblock">
+        Исключительное право на владение сайтом и всеми сопутствующими ему материалами, доступными в рамках проекта "Арбузик", принадлежат ФМА СЛМ «ЗВА». Воспроизведение, копирование, распространение и иное использование сайта и материалов на сайте допустимо только с предварительного письменного согласия ФМА СЛМ «ЗВА».
+      </div>
+    </footer>
   </div>
+  <script>
+    function openPage(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
 </body>
 </html>
