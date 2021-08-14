@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+html,body{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;	
+	background: #282828;
+}
+
+.main{
+	grid-area: main;
+	flex: 1 1 auto;
+}
+
+.main__body{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 70px;
+}
+
+.menu{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+}
+
+.page{
+	overflow: auto;
+	height: 870px;
+	display: grid;
+}
+
+.page__body{
+	margin-top: 30px;
+}
+
+.back{
+	text-decoration-line: none;
+}
+
+.menu__button{
+	transition-duration: 0.3s;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 25px;
+	color: black;
+	text-align: center;
+	padding-top: 18px;
+	background: #f5db62;
+}
+
+@media(min-width: 1000px) {
+	.main__body{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.menu{
+		grid-column-start: 1;
+		grid-column-end: 3;
+		background: green;
+		background: #f8d940;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+	}
+
+	.page{
+		grid-column-start: 3;
+		grid-column-end: 11;
+	}
+
+	.back{
+		text-decoration-line: none;
+	}
+
+	.menu__button{
+		transition-duration: 0.3s;
+		font-family: 'Ubuntu', sans-serif;
+		font-size: 30px;
+		color: black;
+		padding: 22px;
+		background: #f5db62;
+	}
+}
+
+.menu__button:hover{
+	background: #282828;
+	color: white;
+}
+
+.tabcontent{
+	display: none;
+}
+
+.tab__body{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+@media(min-width: 900px) {
+	.tab__body{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+}
+
+.ovoch__block{
+	border: 2px solid grey;
+	margin-bottom: 60px;
+}
+
+.ovoch-item{
+
+}
+
+.ovoch-item__img{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.ovoch-item__title{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	margin-top: 15px;
+}
+
+.ovoch-item__text{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+	grid-area: footer;
+	padding: 30px;
+	background: black;
+	color: white;
+}
+
+.footer__body {
+	padding-bottom: 30px;
+}
+
+.footer__block {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+}
+
+.footer__img {
+	width: 48px;
+	object-fit: none;
+	transform: translate(30px, 20px);
+}
+
+.footer__item {
+	margin-left: 13.333%;
+}
+
+@media(min-width: 638px) {
+	.footer__img {
+		transform: translate(75px, -10px);
+	}
+}
+
+@media(min-width: 1200px) {
+	.footer__img {
+		width: 48px;
+		object-fit: none;
+		transform: translate(-10px, 25px);
+	}
+
+	.footer__item {
+		margin-left: 33.333%;
+	}
+}
+
+.footer__secondblock {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 70px;
+}
+
+@media(min-width: 1200px) {
+	.footer__secondblock {
+		font-size: 20px;
+	}
+}
