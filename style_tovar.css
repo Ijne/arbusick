@@ -23,16 +23,19 @@ html,body{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 70px 870px;
+	height: 100%;
 }
 
 .menu{
-	background: #f8d940;
+
 }
 
 .menu__body{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
+	background: #f8d940;
+	height: 100%;
 }
 
 .page{
@@ -40,7 +43,7 @@ html,body{
 }
 
 .page__body{
-	height: 870px;
+	height: 100%;
 }
 
 .back{
@@ -53,8 +56,7 @@ html,body{
 	font-size: 25px;
 	color: black;
 	text-align: center;
-	padding-top: 21px;
-	padding-bottom: 21px;
+	height: 100%;
 	background: #f5db62;
 }
 
@@ -65,7 +67,7 @@ html,body{
 	}
 
 	.menu{
-		height: 1000px;
+		height: 100%;
 	}
 
 	.menu__body{
@@ -76,6 +78,10 @@ html,body{
 	.menu__button{
 		font-size: 30px;
 		padding: 22px;
+	}
+
+	.page__body{
+		height: 870px;
 	}
 
 }
