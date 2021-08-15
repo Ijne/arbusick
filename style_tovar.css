@@ -94,12 +94,14 @@ html,body{
 
 .tabcontent{
 	display: none;
+	height: 100%;
 }
 
 .tab__body{
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+	height: 100%;
 }
 
 @media(min-width: 1000px) {
