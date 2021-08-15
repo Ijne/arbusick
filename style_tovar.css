@@ -40,6 +40,7 @@ html,body{
 
 .page{
 	overflow: auto;
+	height: 100%;
 }
 
 .page__body{
@@ -81,7 +82,7 @@ html,body{
 	}
 
 	.page__body{
-		height: 1000px;
+		height: 870px;
 	}
 
 }
