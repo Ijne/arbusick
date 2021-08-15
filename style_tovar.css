@@ -22,10 +22,14 @@ html,body{
 .main__body{
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 70px;
+	grid-template-rows: 70px 870px;
 }
 
 .menu{
+	background: #f8d940;
+}
+
+.menu__body{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	grid-template-rows: 1fr;
@@ -33,12 +37,10 @@ html,body{
 
 .page{
 	overflow: auto;
-	height: 870px;
-	display: grid;
 }
 
 .page__body{
-	margin-top: 30px;
+	height: 870px;
 }
 
 .back{
@@ -51,45 +53,31 @@ html,body{
 	font-size: 25px;
 	color: black;
 	text-align: center;
-	padding-top: 18px;
+	padding-top: 21px;
+	padding-bottom: 21px;
 	background: #f5db62;
 }
 
 @media(min-width: 1000px) {
 	.main__body{
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: 200px 1fr;
 		grid-template-rows: 1fr;
 	}
 
 	.menu{
-		grid-column-start: 1;
-		grid-column-end: 3;
-		background: green;
-		background: #f8d940;
-		display: grid;
+		height: 1000px;
+	}
+
+	.menu__body{
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
-	}
-
-	.page{
-		grid-column-start: 3;
-		grid-column-end: 11;
-	}
-
-	.back{
-		text-decoration-line: none;
+		grid-template-rows: 75px 75px 75px 75px 75px;
 	}
 
 	.menu__button{
-		transition-duration: 0.3s;
-		font-family: 'Ubuntu', sans-serif;
 		font-size: 30px;
-		color: black;
 		padding: 22px;
-		background: #f5db62;
 	}
+
 }
 
 .menu__button:hover{
@@ -104,7 +92,7 @@ html,body{
 .tab__body{
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 @media(min-width: 1000px) {
