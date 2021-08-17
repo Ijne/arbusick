@@ -81,8 +81,6 @@ html,body{
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	background: black;
-	position: sticky;
-	top: 0;
 }
 
 @media(min-width: 1100px) {
