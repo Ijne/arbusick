@@ -39,12 +39,11 @@ html,body{
 }
 
 .page{
-	overflow: auto;
-	height: 100%;
+	
 }
 
 .page__body{
-	height: 2000px;
+	overflow: auto;
 }
 
 .back{
