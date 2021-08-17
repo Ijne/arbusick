@@ -3,209 +3,91 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style_tovar.css">
+  <link rel="stylesheet" href="style.css">
   <title>Secret</title>
 </head>
 <body>
   <div class="wrapper">
+    <header class="header">
+      <div class="header__title">Арбузик</div>
+        <div class="header__subtitle">фруктовый магазин</div>
+    </header>
     <main class="main">
-      <div class="main__body">
-        <div class="menu">
-          <div class="menu__body">
-            <a href="index.html" class="menu__button back">главная</a>
-            <div class="menu__button" onclick="openPage(event, 'first')">овощи</div>
-            <div class="menu__button" onclick="openPage(event, 'second')">фрукты</div>
-            <div class="menu__button" onclick="openPage(event, 'third')">ягоды</div>
-            <div class="menu__button" onclick="openPage(event, 'four')">скидки</div>
+      <div class="menu">
+        <a href="" class="menu__item_active">главная</a>
+        <a href="tovar.html" class="menu__item">товар</a>
+        <a href="https://yandex.ru/maps/10658/vladimir-oblast/house/oktyabrskaya_ulitsa_5/YEkYcwJkQEcOQFtvfXp0eHplZw==/?ll=40.555061%2C55.659679&z=20" class="menu__item">на карте</a>
+        <a href="vak.html" class="menu__item">вакансии</a>
+      </div>
+      <div class="info">
+        <div class="info__body">
+          <div class="info__block">
+            <div class="info__img"><img src="https://img5.goodfon.ru/wallpaper/nbig/f/de/arbuz-iagoda-leto-tarelka-dolki.jpg"></div>
+            <div class="info__text">Более 1.500.00 человек по всей России доверяют нам! Мы стремимся оправдывать это доверие и стараемся для вас.</div>
           </div>
         </div>
-        <div class="page">
-          <div class="page__body">
-            <div id="first" class="tabcontent">
-              <div class="tab__body">
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <p class="ovoch-item__img"><img src="огурцы.png"></p>
-                      <a class="ovoch-item__title">Огурцы</a>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="помидоры.png"></div>
-                      <a class="ovoch-item__title">Помидоры</a>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="редиска.png"></div>
-                      <div class="ovoch-item__title">Редиска</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="капуста.png"></div>
-                      <div class="ovoch-item__title">Капуста</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="баклажаны.png"></div>
-                      <div class="ovoch-item__title">Баклажаны</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Лук</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="second" class="tabcontent">
-              <div class="tab__body">
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Яблоки</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Груши</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Персики</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Нектарины</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Манго</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Апельсины</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="third" class="tabcontent">
-              <div class="tab__body">
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Вишня</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Виноград</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Арбузы</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Черешня</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Малина</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Клубника</div>
-                        <div class="ovoch-item__text">100 рублей за киллограм</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div id="four" class="tabcontent">
-              <div class="tab__body">
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Скидок нету</div>
-                        <div class="ovoch-item__text">Скидок сегодня нету</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Скидок нету</div>
-                        <div class="ovoch-item__text">Скидок сегодня нету</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Скидок нету</div>
-                        <div class="ovoch-item__text">Скидок сегодня нету</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Скидок нету</div>
-                        <div class="ovoch-item__text">Скидок сегодня нету</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Скидок нету</div>
-                        <div class="ovoch-item__text">Скидок сегодня нету</div>
-                  </div>
-                </div>
-                <div class="ovoch__block">
-                  <div class="ovoch-item">
-                    <div class="ovoch-item__img"><img src="лук.png"></div>
-                      <div class="ovoch-item__title">Скидок нету</div>
-                        <div class="ovoch-item__text">Скидок сегодня нету</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="info__body">
+          <div class="info__block">
+            <div class="info__img"><img src="https://www.oceangifts.ru/images_old/_main/4008-g_1.jpg"></div>
+            <div class="info__text">Мы удостоены премии "Лучший продуктовый магазин России" по версии трёх топовых журналов!</div>
           </div>
+        </div>
+        <div class="info__body">
+          <div class="info__block">
+            <div class="info__img"><img src="https://ufeelgood.ru/upload/iblock/46c/46c2a6315a1e463ce72377b0f77552ee.jpg"></div>
+            <div class="info__text">У нас самые низкие цены, самые свежие фрукты и самый лучший коллектив!</div>
+          </div>
+        </div>
+      </div>
+      <div class="loyal">
+        <div class="loyal__body">
+          <div class="loyal__title">Программа лояльности</div>
+            <div class="loyal__text">Представляем вам нашу новую программу лояльности! Приобретая карту и используя её в нашем магазине, вы получаете доступ к уникальным бонусам и привелегиям!</div>
+              <div class="tab">
+                <div class="tab__button" onclick="openPage(event, 'first')">карта</div>
+                <div class="tab__button" onclick="openPage(event, 'second')">бонусы</div>
+                <div class="tab__button" onclick="openPage(event, 'third')">цена</div>
+              </div>
+              <div id="first" class="tabcontent">
+                <div class="tab__title">Наша карта</div>
+                  <div class="tab__block">
+                    <div class="tab__img1"><img src="1.png" class="tab__img1"></div>
+                    <div class="tab__img2"><img src="2.png" class="tab__img1"></div>
+                    <div class="tab__text">Встречайте нашу карту лояльности с топовым дизайном!</div>
+                  </div>
+              </div>
+              <div id="second" class="tabcontent">
+                <div class="tab__title">Бонусы</div>
+                  <div class="bonus__block">
+                    <ul class="bonus__list">
+                      <li class="bonus__list_item">Постоянные скидки</li>
+                      <li class="bonus__list_item">Возможность забронировать покупку</li>
+                      <li class="bonus__list_item">Доступ к дегустации</li>
+                      <li class="bonus__list_item">Участие в ежемесячном рейтинге "Арбузик"</li>
+                    </ul>
+                  </div>
+              </div>
+              <div id="third" class="tabcontent">
+                <div class="tab__title">Цена</div>
+                  <div class="cost__block">
+                    <div class="cost__block_item">
+                      <div class="cost__title">"Первый день"</div>
+                      <div class="cost__text">700руб./мес.<div class="cost__shape"></div></div>
+                    </div>
+                    <div class="cost__block_item">
+                      <div class="cost__title">"Месяц с нами"</div>
+                      <div class="cost__text">600руб./мес.<div class="cost__shape"></div></div>
+                    </div>
+                    <div class="cost__block_item">
+                      <div class="cost__title">"Полгода с нами"</div>
+                      <div class="cost__text">500руб./мес.<div class="cost__shape"></div></div>
+                    </div>
+                    <div class="cost__block_item">
+                      <div class="cost__title">"Год с нами"</div>
+                      <div class="cost__text">400руб./мес.<div class="cost__shape"></div></div>
+                    </div>
+                  </div>
+              </div>
         </div>
       </div>
     </main>
