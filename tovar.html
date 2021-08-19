@@ -11,16 +11,13 @@
     <main class="main">
       <div class="main__body">
         <div class="menu">
-          <div class="menu__body">
             <a href="index.html" class="menu__button back">главная</a>
-            <div class="menu__button" onclick="openPage(event, 'first')">овощи</div>
+            <div class="menu__button" onclick="openPage(event, 'first')" id="defaultOpen">овощи</div>
             <div class="menu__button" onclick="openPage(event, 'second')">фрукты</div>
             <div class="menu__button" onclick="openPage(event, 'third')">ягоды</div>
             <div class="menu__button" onclick="openPage(event, 'four')">скидки</div>
-          </div>
         </div>
         <div class="page">
-          <div class="page__body">
             <div id="first" class="tabcontent">
               <div class="tab__body">
                 <div class="ovoch__block">
@@ -205,9 +202,7 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
-      </div>
     </main>
     <footer class="footer">
       <div class="footer__body">
@@ -236,6 +231,9 @@
       document.getElementById(cityName).style.display = "block";
       evt.currentTarget.className += " active";
     }
+  </script>
+  <script>
+    document.getElementById("defaultOpen").click();
   </script>
 </body>
 </html>
