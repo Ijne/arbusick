@@ -21,64 +21,34 @@ html,body{
 
 .main__body{
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 70px 870px;
-	height: 100%;
+	grid-template: 1fr / minmax(auto, auto) 1fr;
 }
 
 .menu{
-	height: 100%;
+	display: grid;
+	background: #f7d53e;
+	grid-template: repeat(5, minmax(auto, auto)) 1fr / 1fr;
 }
 
-.menu__body{
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	background: #f8d940;
-	height: 100%;
-}
 
 .page{
-	
-}
-
-.page__body{
-	overflow: auto;
-}
-
-.back{
-	text-decoration-line: none;
+	min-height: 100%;
 }
 
 .menu__button{
 	transition-duration: 0.2s;
 	font-family: 'Ubuntu', sans-serif;
-	font-size: 25px;
+	font-size: 40px;
 	color: black;
-	text-align: center;
 	background: #f5db62;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width: 400px;
+	text-align: center;
 }
 
-@media(min-width: 1000px) {
-	.main__body{
-		grid-template-columns: 200px 1fr;
-		grid-template-rows: 1fr;
-	}
-
-	.menu__body{
-		grid-template-columns: 1fr;
-		grid-template-rows: 75px 75px 75px 75px 75px;
-	}
-
-	.menu__button{
-		font-size: 30px;
-		padding: 22px;
-	}
-
-	.page__body{
-		height: 870px;
-	}
-
+.back{
+	text-decoration-line: none;
 }
 
 .menu__button:hover{
@@ -88,21 +58,40 @@ html,body{
 
 .tabcontent{
 	display: none;
-	height: 100%;
+	min-height: 100%;
 }
 
 .tab__body{
 	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-	height: 100%;
+	grid-template: 1fr 1fr 1fr/ 1fr 1fr;
 }
 
-@media(min-width: 1000px) {
-	.tab__body{
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
+@media(max-width: 1200px) {
+	.main__body{
+		grid-template: 1fr 1fr / 1fr;
 	}
+
+	.menu{
+		grid-template: 1fr / repeat(5, 1fr);
+		height: 100px;
+	}
+
+	.menu__button{
+		font-size: 20px;
+		color: black;
+		padding-top: 0px;
+		padding-bottom: 0px;
+		width: auto;
+	}
+
+	.tabcontent{
+		min-height: auto;
+	}
+
+	.tab__body{
+		grid-template: repeat(6, 1fr)/ 1fr;
+	}
+
 }
 
 .ovoch__block{
@@ -179,6 +168,7 @@ html,body{
 	padding: 30px;
 	background: black;
 	color: white;
+	box-shadow: 2px 2px 10px black;
 }
 
 .footer__body {
