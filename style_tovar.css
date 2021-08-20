@@ -16,7 +16,7 @@ html,body{
 
 .main{
 	grid-area: main;
-	flex: 1 1 auto;
+	flex: 1 auto;
 }
 
 .main__body{
@@ -32,18 +32,21 @@ html,body{
 
 
 .page{
-	min-height: 100%;
+	height: 100%;
 }
 
 .menu__button{
 	transition-duration: 0.2s;
-	font-family: 'Ubuntu', sans-serif;
-	font-size: 40px;
-	color: black;
 	background: #f5db62;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	width: 400px;
+}
+
+.text{
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 40px;
+	color: black;
 	text-align: center;
 }
 
@@ -58,7 +61,7 @@ html,body{
 
 .tabcontent{
 	display: none;
-	min-height: 100%;
+	height: 100%;
 }
 
 .tab__body{
@@ -68,7 +71,7 @@ html,body{
 
 @media(max-width: 1200px) {
 	.main__body{
-		grid-template: 1fr 1fr / 1fr;
+		grid-template: minmax(auto, 200px) 1fr / 1fr;
 	}
 
 	.menu{
@@ -82,6 +85,11 @@ html,body{
 		padding-top: 0px;
 		padding-bottom: 0px;
 		width: auto;
+	}
+
+	.text{
+		font-size: 20px;
+		margin-top: 30px;
 	}
 
 	.tabcontent{
