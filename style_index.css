@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+
+body {
+	background: url('background.jpg');
+}
+
+
+.text{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 200px;
+	font-family: 'Pangolin';
+	color: whitesmoke;
+}
+
+.block{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 13.333%;
+	margin-bottom: 13.3333%;
+	text-align: center;
+	font-size: 33px;
+	font-family: 'Pangolin';
+	color: whitesmoke;
+}
+
+.image img{
+	object-fit: cover;
+	height: 82%;
+	width: 70%;
+	margin-right: 13.333%;
+}
+
+.floor_block{
+	color: whitesmoke;
+	margin-top: 13.333%;
+	margin-bottom: 13.3333%;
+	text-align: center;
+	font-size: 100px;
+	font-family: 'Pangolin';
+}
+
+.ceil_block{
+	color: whitesmoke;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: center;
+	font-size: 70px;
+	font-family: 'Pangolin';
+}
